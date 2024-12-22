@@ -1,0 +1,177 @@
+*{
+   margin :0;
+   padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+flex-direction: column;
+
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color:#EEEDEB ;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+header a{
+color: black;
+font-size:1.2rem ;
+
+
+
+}
+.logo{
+margin: 0% auto;
+}
+
+.menu li{
+padding: 10px;
+}
+
+.social-links li{
+    padding: 10px;
+}
+
+.main{
+    display: flex;
+
+}
+aside{
+    flex: 0 0 20vw;
+   padding-top: 23px;
+   padding-left: 10px;
+   padding-right: 8px;
+    background-color: #939185;
+}
+.service-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding: 20px; */
+}
+.service-box{
+    border: 1px solid #eee;
+   flex-basis: 32%;
+   padding: 10px;
+   margin-left: 5px;
+   margin-bottom: 15px;
+   max-width: 370px;
+   /* padding: 20px; */
+   display: flex;
+   flex-direction: column;
+
+}
+
+.service-box img{
+width: 100%;
+}
+
+.service-box h3{
+    margin: 5px 0 10px;
+}
+.service-box p{
+    margin: 0 0 10px;
+}
+
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.call-to-action a{
+    background: grey;
+    border: 2px solid transparent;
+    color: #fff;
+    padding:8px 13px;
+    display: block;
+ 
+}
+article p{
+     margin: 10px;
+}
+article h2{
+    padding: 15px;
+
+}
+
+
+.call-to-action a:hover{
+    background: transparent;
+    border: 2px solid grey;
+    color:grey;
+}
+
+footer{
+    background-color: #2F3645;
+color: #eee;
+text-align: center;
+padding: 15px;
+}
+/* 
+article{
+    padding: 10px;
+} */
+
+aside ul{
+    padding: 0px;
+    list-style: none;
+}
+aside ul li{
+    color: #2F3645;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+
+@media screen  and (max-width:850px) {
+   aside{
+
+   flex: 0 0 30vw;
+   }
+
+   .service-box{
+   flex-basis:48%;
+   }
+
+}
+
+@media screen  and (max-width:600px) {
+    header{
+flex-direction: column;
+    }
+ .logo{
+    order: -1;
+ }
+
+.main{
+flex-direction: column;
+}
+
+.main-article{
+    order: -1;
+}
+
+
+.service-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+
+ }
